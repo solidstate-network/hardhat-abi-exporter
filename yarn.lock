@@ -1036,11 +1036,6 @@
   resolved "https://registry.yarnpkg.com/@types/delete-empty/-/delete-empty-3.0.5.tgz#03ae6a38f9c805d8f31ef5e5210c65e040bf56eb"
   integrity sha512-/7fn2o9NpN6GhAfa2enr17kgcO7Bi49j8vj08eSJ4vCh9RgSUPyQft45XLHSCBhlselWl21p7Kl5a0y79qWzqw==
 
-"@types/mocha@^10.0.10":
-  version "10.0.10"
-  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-10.0.10.tgz#91f62905e8d23cbd66225312f239454a23bebfa0"
-  integrity sha512-xPyYSz1cMPnJQhl0CLMH68j3gprKZaTjG3s5Vi+fDgx+uhG9NOXwbVt52eFS8ECyXhyKcjDLCBEqBExKuiZb7Q==
-
 "@types/mysql@2.15.26":
   version "2.15.26"
   resolved "https://registry.yarnpkg.com/@types/mysql/-/mysql-2.15.26.tgz#f0de1484b9e2354d587e7d2bd17a873cc8300836"
