@@ -15,8 +15,8 @@ const DEFAULT_CONFIG: Omit<AbiExporterConfigEntry, 'format' | 'rename'> = {
   spacing: 2,
   pretty: false,
   filter: () => true,
-  // `rename` is not defaulted as it may depend on `flat` option
   // `format` is not defaulted as it may depend on `pretty` option
+  // `rename` is not defaulted as it may depend on `flat` option
 };
 
 export default async (): Promise<Partial<ConfigHooks>> => ({
@@ -73,14 +73,14 @@ export default async (): Promise<Partial<ConfigHooks>> => ({
         ...userConfigEntry,
       };
 
+      const format = entry.format ?? (entry.pretty ? 'minimal' : 'json');
+
       const rename =
         entry.rename ??
         (entry.flat
           ? (sourceName, contractName) => contractName
           : (entry.rename = (sourceName, contractName) =>
               path.join(sourceName, contractName)));
-
-      const format = entry.format ?? (entry.pretty ? 'minimal' : 'json');
 
       abiExporter.push({
         ...entry,

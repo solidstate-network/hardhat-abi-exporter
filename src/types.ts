@@ -7,7 +7,6 @@ export type AbiExporterConfigEntry = {
   except: string[];
   spacing: number;
   pretty: boolean;
-  format: 'minimal' | 'full' | 'json' | 'typescript';
   filter: (
     abiElement: any,
     index: number,
@@ -15,6 +14,7 @@ export type AbiExporterConfigEntry = {
     sourceName: string,
     contractName: string,
   ) => boolean;
+  format: 'minimal' | 'full' | 'json' | 'typescript';
   rename: (sourceName: string, contractName: string) => string;
 };
 
