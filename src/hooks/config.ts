@@ -1,4 +1,4 @@
-import type { AbiExporterConfigEntry } from '../types.js';
+import type { AbiExporterConfig, AbiExporterConfigEntry } from '../types.js';
 import type {
   ConfigHooks,
   HardhatUserConfigValidationError,
@@ -65,7 +65,7 @@ export default async (): Promise<Partial<ConfigHooks>> => ({
   },
 
   resolveUserConfig: async (userConfig, resolveConfigurationVariable, next) => {
-    const abiExporter: AbiExporterConfigEntry[] = [];
+    const abiExporter: AbiExporterConfig = [];
 
     for (const userConfigEntry of [userConfig.abiExporter ?? []].flat()) {
       const entry = {
