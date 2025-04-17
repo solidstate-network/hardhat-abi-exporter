@@ -107,7 +107,7 @@ const exportAbiGroup = async (
   await Promise.all(
     outputData.map(async ({ destination, contents }) => {
       await fs.promises.mkdir(path.dirname(destination), { recursive: true });
-      await fs.promises.writeFile(destination, contents, { flag: 'w' });
+      await fs.promises.writeFile(destination, contents);
     }),
   );
 };
