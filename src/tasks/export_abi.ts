@@ -1,6 +1,7 @@
+import { TASK_EXPORT_ABI } from '../task_names.js';
 import { task } from 'hardhat/config';
 
-export default task('export-abi')
+export default task(TASK_EXPORT_ABI)
   .setDescription(
     'Extract ABIs from compilation artifacts and write to a directory',
   )

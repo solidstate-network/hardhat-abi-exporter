@@ -13,6 +13,7 @@ const action: NewTaskActionFunction<ExportAbiActionArguments> = async (
 
   if (!args.noCompile) {
     hre.globalOptions.noExportAbi = true;
+    // TODO: import task name constant
     await hre.tasks.getTask('compile').run();
   }
 
