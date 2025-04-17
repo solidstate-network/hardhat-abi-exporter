@@ -79,8 +79,7 @@ export default async (): Promise<Partial<ConfigHooks>> => ({
         entry.rename ??
         (entry.flat
           ? (sourceName, contractName) => contractName
-          : (entry.rename = (sourceName, contractName) =>
-              path.join(sourceName, contractName)));
+          : (sourceName, contractName) => path.join(sourceName, contractName));
 
       abiExporter.push({
         ...entry,
