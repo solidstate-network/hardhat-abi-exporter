@@ -13,5 +13,7 @@ declare module 'hardhat/types/config' {
 declare module 'hardhat/types/global-options' {
   interface GlobalOptions {
     noExportAbi: boolean;
+    // TODO: remove type once it's added by Hardhat
+    coverage: boolean;
   }
 }
