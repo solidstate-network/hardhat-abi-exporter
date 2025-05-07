@@ -1,7 +1,6 @@
 {
   "name": "@solidstate/hardhat-abi-exporter",
   "version": "3.0.0-next.0",
-  "license": "MIT",
   "description": "Export Ethereum smart contract ABIs on compilation",
   "keywords": [
     "hardhat",
@@ -17,22 +16,20 @@
     "dapps"
   ],
   "repository": "github:solidstate-network/hardhat-abi-exporter",
+  "license": "MIT",
   "author": "Nick Barry",
   "type": "module",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
   "scripts": {
     "build": "yarn clean && tsc --build",
     "clean": "tsc --build --clean",
     "prepare": "husky",
     "prettier": "prettier --write ."
-  },
-  "files": [
-    "dist/",
-    "src/"
-  ],
-  "peerDependencies": {
-    "hardhat": "^3.0.0-next.4"
   },
   "dependencies": {
     "@ethersproject/abi": "^5.8.0",
@@ -46,9 +43,13 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.5.2",
     "prettier": "^3.5.3",
+    "prettier-plugin-packagejson": "^2.5.11",
     "prettier-plugin-solidity": "^2.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "hardhat": "^3.0.0-next.4"
   },
   "engines": {
     "node": ">=14.14.0"
