@@ -12,7 +12,7 @@ import type { HardhatPlugin } from 'hardhat/types/plugins';
 const plugin: HardhatPlugin = {
   id: pkg.name!,
   npmPackage: pkg.name!,
-  tasks: [taskClearAbi, taskExportAbi, taskClean],
+  tasks: [taskClean, taskClearAbi, taskExportAbi],
   hookHandlers: {
     config: import.meta.resolve('./hooks/config.js'),
     solidity: import.meta.resolve('./hooks/solidity.js'),
