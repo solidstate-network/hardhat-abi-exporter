@@ -41,6 +41,7 @@
     "@types/node": "^22.15.14",
     "hardhat": "^3.0.0-next.6",
     "husky": "^9.1.7",
+    "knip": "^5.56.0",
     "lint-staged": "^15.5.2",
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.11",
