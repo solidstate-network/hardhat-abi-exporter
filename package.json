@@ -19,8 +19,11 @@
   "license": "MIT",
   "author": "Nick Barry",
   "type": "module",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./types": "./dist/types.js"
+  },
+  "types": "dist/index.d.ts",
   "files": [
     "dist/",
     "src/"
