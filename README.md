@@ -47,7 +47,7 @@ Add configuration under the `abiExporter` key:
 | `format`       | format type (`'minimal'`, `'full'`, `'json'`, `'typescript'`)                                                                                                              | `'json'`     |
 | `rename`       | `Function` with signature `(sourceName: string, contractName: string) => string` used to rename an exported ABI (incompatible with `flat` option)                          | `undefined`  |
 
-Note that the configuration formatted as either a single `Object`, or an `Array` of objects. An `Array` may be used to specify multiple outputs.
+Note that the configuration may be formatted as either a single `Object`, or an `Array` of objects specifying multiple outputs.
 
 ```javascript
 abiExporter: {
