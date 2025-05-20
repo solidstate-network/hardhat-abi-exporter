@@ -1,4 +1,5 @@
 import { exportAbi } from '../lib/export_abi.js';
+import { TASK_COMPILE } from '../task_names.js';
 import type { NewTaskActionFunction } from 'hardhat/types/tasks';
 
 interface ExportAbiActionArguments {
@@ -13,8 +14,7 @@ const action: NewTaskActionFunction<ExportAbiActionArguments> = async (
 
   if (!args.noCompile) {
     hre.globalOptions.noExportAbi = true;
-    // TODO: import task name constant
-    await hre.tasks.getTask('compile').run();
+    await hre.tasks.getTask(TASK_COMPILE).run();
   }
 
   await exportAbi(hre, hre.config.abiExporter);

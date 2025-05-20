@@ -1,6 +1,6 @@
+import { TASK_CLEAN } from '../task_names.js';
 import { overrideTask } from 'hardhat/config';
 
-// TODO: import task name constant
-export default overrideTask('clean')
+export default overrideTask(TASK_CLEAN)
   .setAction(import.meta.resolve('../actions/clean.js'))
   .build();
