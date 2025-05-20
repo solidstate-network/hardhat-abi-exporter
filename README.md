@@ -11,7 +11,7 @@ Export Ethereum smart contract ABIs on compilation via Hardhat.
 ```bash
 npm install --save-dev @solidstate/hardhat-abi-exporter
 # or
-yarn add --dev @solidstate/hardhat-abi-exporter
+pnpm add -D @solidstate/hardhat-abi-exporter
 ```
 
 ## Usage
@@ -98,8 +98,8 @@ The included Hardhat tasks may be run manually:
 npx hardhat export-abi
 npx hardhat clear-abi
 # or
-yarn run hardhat export-abi
-yarn run hardhat clear-abi
+pnpm hardhat export-abi
+pnpm hardhat clear-abi
 ```
 
 By default, the hardhat `compile` task is run before exporting ABIs. This behavior can be disabled with the `--no-compile` flag:
@@ -107,7 +107,7 @@ By default, the hardhat `compile` task is run before exporting ABIs. This behavi
 ```bash
 npx hardhat export-abi --no-compile
 # or
-yarn run hardhat export-abi --no-compile
+pnpm hardhat export-abi --no-compile
 ```
 
 The `path` directory will be created if it does not exist.
@@ -118,14 +118,14 @@ ABIs files are saved in the format `[CONTRACT_NAME].json`.
 
 ## Development
 
-Install dependencies via Yarn:
+Install dependencies via pnpm:
 
 ```bash
-yarn install
+pnpm install
 ```
 
 Setup Husky to format code on commit:
 
 ```bash
-yarn prepare
+pnpm prepare
 ```

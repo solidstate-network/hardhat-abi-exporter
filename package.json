@@ -29,7 +29,7 @@
     "src/"
   ],
   "scripts": {
-    "build": "yarn clean && tsc --build",
+    "build": "pnpm clean && tsc --build",
     "clean": "tsc --build --clean",
     "prepare": "husky",
     "prettier": "prettier --write ."
