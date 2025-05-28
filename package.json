@@ -45,7 +45,7 @@
     "hardhat": "^3.0.0-next.10",
     "husky": "^9.1.7",
     "knip": "^5.57.2",
-    "lint-staged": "^16.0.0",
+    "lint-staged": "github:ItsNickBarry/lint-staged#hide-all",
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.14",
     "prettier-plugin-solidity": "^2.0.0",
