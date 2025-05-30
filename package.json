@@ -32,6 +32,7 @@
     "build": "pnpm clean && tsc --build",
     "clean": "tsc --build --clean",
     "prepare": "husky",
+    "prepublishOnly": "pnpm build",
     "prettier": "prettier --write ."
   },
   "dependencies": {
