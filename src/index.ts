@@ -12,6 +12,14 @@ import type { HardhatPlugin } from 'hardhat/types/plugins';
 const plugin: HardhatPlugin = {
   id: pkg.name!,
   npmPackage: pkg.name!,
+  dependencies: [
+    async () => {
+      const { default: HardhatSolidstateUtils } = await import(
+        '@solidstate/hardhat-solidstate-utils'
+      );
+      return HardhatSolidstateUtils;
+    },
+  ],
   tasks: [taskClean, taskClearAbi, taskExportAbi],
   hookHandlers: {
     config: import.meta.resolve('./hooks/config.js'),
