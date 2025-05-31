@@ -1,10 +1,10 @@
+import type { FilterOptions } from '@solidstate/hardhat-solidstate-utils/types';
+
 export type AbiExporterConfigEntry = {
   path: string;
   runOnCompile: boolean;
   clear: boolean;
   flat: boolean;
-  only: string[];
-  except: string[];
   spacing: number;
   pretty: boolean;
   filter: (
@@ -16,7 +16,7 @@ export type AbiExporterConfigEntry = {
   ) => boolean;
   format: 'minimal' | 'full' | 'json' | 'typescript';
   rename: (sourceName: string, contractName: string) => string;
-};
+} & FilterOptions;
 
 export type AbiExporterUserConfigEntry = Partial<AbiExporterConfigEntry>;
 
