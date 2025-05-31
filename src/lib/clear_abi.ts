@@ -1,4 +1,4 @@
-import pkg from '../../package.json';
+import pkg from '../../package.json' with { type: 'json' };
 import type { AbiExporterConfig, AbiExporterConfigEntry } from '../types.js';
 import { Interface } from '@ethersproject/abi';
 import deleteEmpty from 'delete-empty';

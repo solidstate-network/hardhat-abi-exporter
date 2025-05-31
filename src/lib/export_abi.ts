@@ -1,4 +1,4 @@
-import pkg from '../../package.json';
+import pkg from '../../package.json' with { type: 'json' };
 import type { AbiExporterConfig, AbiExporterConfigEntry } from '../types.js';
 import { clearAbi } from './clear_abi.js';
 import { FormatTypes, Interface } from '@ethersproject/abi';

@@ -1,4 +1,4 @@
-import pkg from '../package.json';
+import pkg from '../package.json' with { type: 'json' };
 import taskClean from './tasks/clean.js';
 import taskClearAbi from './tasks/clear_abi.js';
 import taskExportAbi from './tasks/export_abi.js';
