@@ -2,7 +2,7 @@ import pkg from '../../package.json';
 import type { AbiExporterConfig, AbiExporterConfigEntry } from '../types.js';
 import { clearAbi } from './clear_abi.js';
 import { FormatTypes, Interface } from '@ethersproject/abi';
-import { filter } from '@solidstate/hardhat-solidstate-utils/filter';
+import { readArtifacts } from '@solidstate/hardhat-solidstate-utils/filter';
 import { HardhatPluginError } from 'hardhat/plugins';
 import type { HookContext } from 'hardhat/types/hooks';
 import fs from 'node:fs';
@@ -36,18 +36,9 @@ const exportAbiGroup = async (
     );
   }
 
-  // get list of all contracts and filter according to configuraiton
+  // get contract artifacts, filtered according to configuration
 
-  const fullNames = filter(
-    Array.from(await context.artifacts.getAllFullyQualifiedNames()),
-    config,
-  );
-
-  // get contract artifacts
-
-  const artifacts = await Promise.all(
-    fullNames.map((fullName) => context.artifacts.readArtifact(fullName)),
-  );
+  const artifacts = await readArtifacts(context, config);
 
   // filter out 0-length ABIs and generate export file contents
 
