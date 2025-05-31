@@ -1,13 +1,10 @@
 {
+  "extends": "@tsconfig/node22/tsconfig.json",
   "compilerOptions": {
-    "target": "es2020",
-    "module": "node16",
-    "strict": true,
-    "esModuleInterop": true,
-    "rootDir": "src",
-    "outDir": "dist",
     "declaration": true,
     "resolveJsonModule": true,
+    "rootDir": "src",
+    "outDir": "dist",
     "tsBuildInfoFile": ".tsbuildinfo"
   },
   "include": ["src"]
