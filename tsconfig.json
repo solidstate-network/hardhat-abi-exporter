@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "commonjs",
+    "module": "node16",
     "strict": true,
     "esModuleInterop": true,
+    "rootDir": "src",
     "outDir": "dist",
     "declaration": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "tsBuildInfoFile": ".tsbuildinfo"
   },
-  "exclude": ["dist", "node_modules"]
+  "include": ["src"]
 }
