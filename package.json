@@ -30,7 +30,7 @@
   ],
   "scripts": {
     "build": "pnpm clean && tsc --build",
-    "clean": "tsc --build --clean",
+    "clean": "rm -rf dist/",
     "prepare": "husky",
     "prepublishOnly": "pnpm build",
     "prettier": "prettier --write ."
