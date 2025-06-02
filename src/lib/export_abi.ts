@@ -63,8 +63,10 @@ const exportAbiGroup = async (
       contents = JSON.stringify(contents, null, config.spacing);
 
       if (config.format === 'typescript') {
-        contents = `${TS_TAG}\nexport default ${contents} as const;\n`;
+        contents = `${TS_TAG}\nexport default ${contents} as const;`;
       }
+
+      contents = `${contents}\n`;
 
       const extension = config.format === 'typescript' ? '.ts' : '.json';
       const destination =
