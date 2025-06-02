@@ -37,15 +37,13 @@
   },
   "dependencies": {
     "@ethersproject/abi": "^5.8.0",
-    "@solidstate/hardhat-solidstate-utils": "1.0.0-next.3",
-    "delete-empty": "^3.0.0"
+    "@solidstate/hardhat-solidstate-utils": "1.0.0-next.3"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-utils": "3.0.0-next.13",
     "@solidstate/contracts": "^0.0.61",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@tsconfig/node22": "^22.0.2",
-    "@types/delete-empty": "^3.0.5",
     "@types/node": "^22.15.29",
     "hardhat": "^3.0.0-next.13",
     "husky": "^9.1.7",
