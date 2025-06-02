@@ -41,6 +41,7 @@
     "delete-empty": "^3.0.0"
   },
   "devDependencies": {
+    "@solidstate/contracts": "^0.0.61",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@tsconfig/node22": "^22.0.2",
     "@types/delete-empty": "^3.0.5",
