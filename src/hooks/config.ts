@@ -1,4 +1,8 @@
-import type { AbiExporterConfig, AbiExporterConfigEntry } from '../types.js';
+import type {
+  AbiExporterConfig,
+  AbiExporterConfigEntry,
+  AbiExporterUserConfigEntry,
+} from '../types.js';
 import type {
   ConfigHooks,
   HardhatUserConfigValidationError,
@@ -23,19 +27,21 @@ export default async (): Promise<Partial<ConfigHooks>> => ({
   validateUserConfig: async (userConfig) => {
     const errors: HardhatUserConfigValidationError[] = [];
 
-    const configEntries = [userConfig.abiExporter ?? []].flat();
+    const userConfigEntries = [
+      userConfig.abiExporter ?? (DEFAULT_CONFIG as AbiExporterUserConfigEntry),
+    ].flat();
 
-    for (let i = 0; i < configEntries.length; i++) {
-      const entry = configEntries[i];
+    for (let i = 0; i < userConfigEntries.length; i++) {
+      const userConfigEntry = userConfigEntries[i];
 
-      if (entry.flat && entry.rename) {
+      if (userConfigEntry.flat && userConfigEntry.rename) {
         errors.push({
           path: ['abiExporter', i, 'flat'],
           message: '`flat` & `rename` config cannot be specified together',
         });
       }
 
-      if (entry.pretty && entry.format) {
+      if (userConfigEntry.pretty && userConfigEntry.format) {
         errors.push({
           path: ['abiExporter', i, 'pretty'],
           message: '`pretty` & `format` config cannot be specified together',
@@ -43,12 +49,14 @@ export default async (): Promise<Partial<ConfigHooks>> => ({
       }
 
       if (
-        entry.format &&
-        !['json', 'minimal', 'full', 'typescript'].includes(entry.format)
+        userConfigEntry.format &&
+        !['json', 'minimal', 'full', 'typescript'].includes(
+          userConfigEntry.format,
+        )
       ) {
         errors.push({
           path: ['abiExporter', i, 'format'],
-          message: `invalid format: ${entry.format}`,
+          message: `invalid format: ${userConfigEntry.format}`,
         });
       }
     }
@@ -67,22 +75,27 @@ export default async (): Promise<Partial<ConfigHooks>> => ({
   resolveUserConfig: async (userConfig, resolveConfigurationVariable, next) => {
     const abiExporter: AbiExporterConfig = [];
 
-    for (const userConfigEntry of [userConfig.abiExporter ?? []].flat()) {
-      const entry = {
+    const userConfigEntries = [
+      userConfig.abiExporter ?? (DEFAULT_CONFIG as AbiExporterUserConfigEntry),
+    ].flat();
+
+    for (const userConfigEntry of userConfigEntries) {
+      const configEntry = {
         ...DEFAULT_CONFIG,
         ...userConfigEntry,
       };
 
-      const format = entry.format ?? (entry.pretty ? 'minimal' : 'json');
+      const format =
+        configEntry.format ?? (configEntry.pretty ? 'minimal' : 'json');
 
       const rename =
-        entry.rename ??
-        (entry.flat
+        configEntry.rename ??
+        (configEntry.flat
           ? (sourceName, contractName) => contractName
           : (sourceName, contractName) => path.join(sourceName, contractName));
 
       abiExporter.push({
-        ...entry,
+        ...configEntry,
         format,
         rename,
       });
