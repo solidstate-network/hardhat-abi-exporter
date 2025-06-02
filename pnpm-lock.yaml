@@ -18,6 +18,9 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
     devDependencies:
+      '@nomicfoundation/hardhat-utils':
+        specifier: 3.0.0-next.13
+        version: 3.0.0-next.13
       '@solidstate/contracts':
         specifier: ^0.0.61
         version: 0.0.61

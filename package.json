@@ -41,6 +41,7 @@
     "delete-empty": "^3.0.0"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-utils": "3.0.0-next.13",
     "@solidstate/contracts": "^0.0.61",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@tsconfig/node22": "^22.0.2",
@@ -56,6 +57,7 @@
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
+    "@nomicfoundation/hardhat-utils": "3.0.0-next.13",
     "hardhat": "^3.0.0-next.4"
   },
   "engines": {
