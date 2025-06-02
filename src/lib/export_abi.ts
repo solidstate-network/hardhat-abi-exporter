@@ -54,9 +54,13 @@ const exportAbiGroup = async (
 
       // format ABI using ethers presets
       const formatType = FormatTypes[config.format] ?? 'json';
-      abi = [new Interface(abi).format(formatType)].flat();
+      let contents = new Interface(abi).format(formatType);
 
-      let contents = JSON.stringify(abi, null, config.spacing);
+      if (formatType === 'json') {
+        contents = JSON.parse(contents as string);
+      }
+
+      contents = JSON.stringify(contents, null, config.spacing);
 
       if (config.format === 'typescript') {
         contents = `${TS_TAG}\nexport default ${contents} as const;\n`;
