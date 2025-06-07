@@ -1,7 +1,7 @@
-import { TASK_EXPORT_ABI } from '../task_names.js';
+import { TASK_ABI_EXPORT } from '../task_names.js';
 import { task } from 'hardhat/config';
 
-export default task(TASK_EXPORT_ABI)
+export default task(TASK_ABI_EXPORT)
   .setDescription(
     'Extract ABIs from compilation artifacts and write to a directory',
   )
@@ -9,5 +9,5 @@ export default task(TASK_EXPORT_ABI)
     name: 'noCompile',
     description: "Don't compile before running this task",
   })
-  .setAction(import.meta.resolve('../actions/export_abi.js'))
+  .setAction(import.meta.resolve('../actions/abi_export.js'))
   .build();

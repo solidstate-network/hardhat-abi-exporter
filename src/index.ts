@@ -1,7 +1,8 @@
 import pkg from '../package.json' with { type: 'json' };
+import taskAbi from './tasks/abi.js';
+import taskAbiClean from './tasks/abi_clean.js';
+import taskAbiExport from './tasks/abi_export.js';
 import taskClean from './tasks/clean.js';
-import taskClearAbi from './tasks/clear_abi.js';
-import taskExportAbi from './tasks/export_abi.js';
 import './type_extensions.js';
 import { globalOption } from 'hardhat/config';
 import { ArgumentType } from 'hardhat/types/arguments';
@@ -20,7 +21,7 @@ const plugin: HardhatPlugin = {
       return HardhatSolidstateUtils;
     },
   ],
-  tasks: [taskClean, taskClearAbi, taskExportAbi],
+  tasks: [taskAbi, taskAbiClean, taskAbiExport, taskClean],
   hookHandlers: {
     config: import.meta.resolve('./hooks/config.js'),
     solidity: import.meta.resolve('./hooks/solidity.js'),

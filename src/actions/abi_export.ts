@@ -2,11 +2,11 @@ import { exportAbi } from '../lib/export_abi.js';
 import { TASK_COMPILE } from '../task_names.js';
 import type { NewTaskActionFunction } from 'hardhat/types/tasks';
 
-interface ExportAbiActionArguments {
+interface TaskActionArguments {
   noCompile: boolean;
 }
 
-const action: NewTaskActionFunction<ExportAbiActionArguments> = async (
+const action: NewTaskActionFunction<TaskActionArguments> = async (
   args,
   hre,
 ) => {
