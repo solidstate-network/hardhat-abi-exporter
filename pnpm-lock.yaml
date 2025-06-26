@@ -13,7 +13,7 @@ importers:
         version: 5.8.0
       '@solidstate/hardhat-solidstate-utils':
         specifier: 1.0.0-next.3
-        version: 1.0.0-next.3(@nomicfoundation/hardhat-utils@3.0.0-next.13)(hardhat@3.0.0-next.15)
+        version: 1.0.0-next.3(@nomicfoundation/hardhat-utils@3.0.0-next.13)(hardhat@3.0.0-next.20)
     devDependencies:
       '@nomicfoundation/hardhat-utils':
         specifier: 3.0.0-next.13
@@ -23,34 +23,34 @@ importers:
         version: 0.0.61
       '@trivago/prettier-plugin-sort-imports':
         specifier: ^5.2.2
-        version: 5.2.2(@vue/compiler-sfc@3.5.16)(prettier@3.5.3)
+        version: 5.2.2(@vue/compiler-sfc@3.5.16)(prettier@3.6.1)
       '@tsconfig/node22':
         specifier: ^22.0.2
         version: 22.0.2
       '@types/node':
-        specifier: ^24.0.1
-        version: 24.0.1
+        specifier: ^24.0.4
+        version: 24.0.4
       hardhat:
-        specifier: ^3.0.0-next.15
-        version: 3.0.0-next.15
+        specifier: ^3.0.0-next.20
+        version: 3.0.0-next.20
       husky:
         specifier: ^9.1.7
         version: 9.1.7
       knip:
-        specifier: ^5.61.0
-        version: 5.61.0(@types/node@24.0.1)(typescript@5.8.3)
+        specifier: ^5.61.2
+        version: 5.61.2(@types/node@24.0.4)(typescript@5.8.3)
       lint-staged:
         specifier: github:ItsNickBarry/lint-staged#knip
-        version: https://codeload.github.com/ItsNickBarry/lint-staged/tar.gz/daa65d7006ab27397be251c71bfa05fa63be2b64
+        version: https://codeload.github.com/ItsNickBarry/lint-staged/tar.gz/3d833af058e3c9151d1b1f3d121d7e2d88bf96f3
       prettier:
-        specifier: ^3.5.3
-        version: 3.5.3
+        specifier: ^3.6.1
+        version: 3.6.1
       prettier-plugin-packagejson:
-        specifier: ^2.5.15
-        version: 2.5.15(prettier@3.5.3)
+        specifier: ^2.5.16
+        version: 2.5.16(prettier@3.6.1)
       prettier-plugin-solidity:
         specifier: ^2.0.0
-        version: 2.0.0(prettier@3.5.3)
+        version: 2.0.0(prettier@3.6.1)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -422,17 +422,17 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@nomicfoundation/hardhat-errors@3.0.0-next.15':
-    resolution: {integrity: sha512-w0BhhyaKjrm9y7XyOUK3DU1gW8HkXu4KDe1wCl8ksC61bibsCMUlyUdIcTifS4Fm8lKriPmtgj4Dg+2vEpZLYg==}
+  '@nomicfoundation/hardhat-errors@3.0.0-next.20':
+    resolution: {integrity: sha512-jJaGIzPs5YzB8oreLhYAyAo5veLJXXwiJt8oVkLRYPvfsT8+RWrIwJjcbwktfMObNNceAO8PgDP1d2YBuPwlDw==}
 
   '@nomicfoundation/hardhat-utils@3.0.0-next.13':
     resolution: {integrity: sha512-aTjP82db5dC+so6D0FgM7huxI3rXHNXg183e2HcEH1sz8igiMYFJeW5CEQr3mRptkPXwodwWagJGn3prQvM2fg==}
 
-  '@nomicfoundation/hardhat-utils@3.0.0-next.15':
-    resolution: {integrity: sha512-ubIi/6MuT9Z+UQCvY1nb9d2wTjRZyqkH0kzUPPY77BOdb3zqV/YXpJapF+RrnJ6qUIJUEZO6CMiieEQGL41D3A==}
+  '@nomicfoundation/hardhat-utils@3.0.0-next.20':
+    resolution: {integrity: sha512-/uLGNOgj6SfhzMhAH7Vony5l/IHYvSdgUxXg9mTuS8qLe6L/RlqcekdtNBWZhanltIaWegD1qfDIbz+b5HJPbQ==}
 
-  '@nomicfoundation/hardhat-zod-utils@3.0.0-next.15':
-    resolution: {integrity: sha512-JyRtMzOMDrAWXccB/e9L62QEePpPD5Vmux8Basn+wmKD7BaYJio2qqi4GlMpDD4Rnwi+6u0e1KNasKxFqiusJw==}
+  '@nomicfoundation/hardhat-zod-utils@3.0.0-next.20':
+    resolution: {integrity: sha512-t3IRLHShtEnmLwNv2p4uGaklBrEgwGHEp5/auOXf2OhQTvfDQ4F2MLx1ZhL/xsp6XksFdPRtf+6kOYB/rsJr3w==}
     peerDependencies:
       zod: ^3.23.8
 
@@ -596,8 +596,8 @@ packages:
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
 
-  '@types/node@24.0.1':
-    resolution: {integrity: sha512-MX4Zioh39chHlDJbKmEgydJDS3tspMP/lnQC67G3SWsTnb9NeYVWOjkxpOSy4oMfPs4StcWHwBrvUb4ybfnuaw==}
+  '@types/node@24.0.4':
+    resolution: {integrity: sha512-ulyqAkrhnuNq9pB76DRBTkcS6YsmDALy6Ua63V8OhrOBgbcYt6IOdzpw5P1+dyRIyMerzLkeYWBeOXPpA9GMAA==}
 
   '@vue/compiler-core@3.5.16':
     resolution: {integrity: sha512-AOQS2eaQOaaZQoL1u+2rCJIKDruNXVBZSiUD3chnUrsoX5ZTQMaCvXlWNIfxBJuU15r1o7+mpo5223KVtIhAgQ==}
@@ -857,8 +857,8 @@ packages:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
     engines: {node: '>= 0.4'}
 
-  hardhat@3.0.0-next.15:
-    resolution: {integrity: sha512-Ganr5/4X0TaJV86oIqylLCK86oV6gIefS88c9VIJvWaoSOmvU76Fp/rbxNAnV9ag3whnhFirFg2CE4I0yLsofQ==}
+  hardhat@3.0.0-next.20:
+    resolution: {integrity: sha512-NCtXtEiau2ViRF9n1t/bcYwnIoUowIgty+y/vF5a9feTGSvZGMqVJUC0p3SwgQhemd7QhkQ4sncfrrNUFjaDNw==}
     hasBin: true
 
   has-symbols@1.1.0:
@@ -941,8 +941,8 @@ packages:
     resolution: {integrity: sha512-x7fpwxOkbhFCaJDJ8vb1fBY3DdSa4AlITaz+HHILQJzdPMnHEFjxPwVUi1ALIbcIxDE0PNe/0i7frnY8QnBQog==}
     engines: {node: '>=7.10.1'}
 
-  knip@5.61.0:
-    resolution: {integrity: sha512-g4zwSPUoSCWXWTHshNgtsiuM90jnLpZyBZ6J7BQaydfoOjclgh4NfrD7BL+TjChgDbeYg5bEQcERKK/vdJlpmA==}
+  knip@5.61.2:
+    resolution: {integrity: sha512-ZBv37zDvZj0/Xwk0e93xSjM3+5bjxgqJ0PH2GlB5tnWV0ktXtmatWLm+dLRUCT/vpO3SdGz2nNAfvVhuItUNcQ==}
     engines: {node: '>=18.18.0'}
     hasBin: true
     peerDependencies:
@@ -953,9 +953,9 @@ packages:
     resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
 
-  lint-staged@https://codeload.github.com/ItsNickBarry/lint-staged/tar.gz/daa65d7006ab27397be251c71bfa05fa63be2b64:
-    resolution: {tarball: https://codeload.github.com/ItsNickBarry/lint-staged/tar.gz/daa65d7006ab27397be251c71bfa05fa63be2b64}
-    version: 16.1.1
+  lint-staged@https://codeload.github.com/ItsNickBarry/lint-staged/tar.gz/3d833af058e3c9151d1b1f3d121d7e2d88bf96f3:
+    resolution: {tarball: https://codeload.github.com/ItsNickBarry/lint-staged/tar.gz/3d833af058e3c9151d1b1f3d121d7e2d88bf96f3}
+    version: 16.1.2
     engines: {node: '>=20.17'}
     hasBin: true
 
@@ -981,8 +981,8 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
 
-  micro-eth-signer@0.13.3:
-    resolution: {integrity: sha512-C1AxZMw10VGQrdox/6rtl94aUYOceEnPUR+ADkm35/z4HPqb6ijIDF6G/KySuG2QveH9dqOohKzaHoru/A3xSw==}
+  micro-eth-signer@0.14.0:
+    resolution: {integrity: sha512-5PLLzHiVYPWClEvZIXXFu5yutzpadb73rnQCpUqIHu3No3coFuWQNfE5tkBQJ7djuLYl6aRLaS0MgWJYGoqiBw==}
 
   micro-packed@0.7.3:
     resolution: {integrity: sha512-2Milxs+WNC00TRlem41oRswvw31146GiSaoCT7s3Xi2gMUglW5QBeqlQaZeHr5tJx9nm3i57LNXPqxOOaWtTYg==}
@@ -1055,8 +1055,8 @@ packages:
     resolution: {integrity: sha512-d/jtm+rdNT8tpXuHY5MMtcbJFBkhXE6593XVR9UoGCH8jSFGci7jGvMGH5RYd5PBJW+00NZQt6gf7CbagJCrhg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier-plugin-packagejson@2.5.15:
-    resolution: {integrity: sha512-2QSx6y4IT6LTwXtCvXAopENW5IP/aujC8fobEM2pDbs0IGkiVjW/ipPuYAHuXigbNe64aGWF7vIetukuzM3CBw==}
+  prettier-plugin-packagejson@2.5.16:
+    resolution: {integrity: sha512-1EORN4SahAWU55ll+xp0PXhiUmD93PJlBE88GbWv7X5xtZ7ycj3GNbRGX+r75zWn70KAoYVO08rF2C/TqGCHPA==}
     peerDependencies:
       prettier: '>= 1.16.0'
     peerDependenciesMeta:
@@ -1069,8 +1069,8 @@ packages:
     peerDependencies:
       prettier: '>=3.0.0'
 
-  prettier@3.5.3:
-    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+  prettier@3.6.1:
+    resolution: {integrity: sha512-5xGWRa90Sp2+x1dQtNpIpeOQpTDBs9cZDmA/qs2vDNN2i18PdapqY7CmBeyLlMuGqXJRIOPaCaVZTLNQRWUH/A==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1125,8 +1125,8 @@ packages:
   sort-object-keys@1.1.3:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
 
-  sort-package-json@3.2.1:
-    resolution: {integrity: sha512-rTfRdb20vuoAn7LDlEtCqOkYfl2X+Qze6cLbNOzcDpbmKEhJI30tTN44d5shbKJnXsvz24QQhlCm81Bag7EOKg==}
+  sort-package-json@3.2.2:
+    resolution: {integrity: sha512-twAMvmzOcEPsN3N9zKPDpl6zproGU0JcBOQFU4T6e5wrStH8iuPiAjFz9g+cMRC52eQBUbZlFCeGt+F4vginkw==}
     hasBin: true
 
   source-map-js@1.2.1:
@@ -1592,9 +1592,9 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@nomicfoundation/hardhat-errors@3.0.0-next.15':
+  '@nomicfoundation/hardhat-errors@3.0.0-next.20':
     dependencies:
-      '@nomicfoundation/hardhat-utils': 3.0.0-next.15
+      '@nomicfoundation/hardhat-utils': 3.0.0-next.20
     transitivePeerDependencies:
       - supports-color
 
@@ -1611,7 +1611,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nomicfoundation/hardhat-utils@3.0.0-next.15':
+  '@nomicfoundation/hardhat-utils@3.0.0-next.20':
     dependencies:
       '@streamparser/json-node': 0.0.22
       debug: 4.4.1
@@ -1624,9 +1624,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nomicfoundation/hardhat-zod-utils@3.0.0-next.15(zod@3.25.7)':
+  '@nomicfoundation/hardhat-zod-utils@3.0.0-next.20(zod@3.25.7)':
     dependencies:
-      '@nomicfoundation/hardhat-utils': 3.0.0-next.15
+      '@nomicfoundation/hardhat-utils': 3.0.0-next.20
       zod: 3.25.7
     transitivePeerDependencies:
       - supports-color
@@ -1730,14 +1730,14 @@ snapshots:
 
   '@solidstate/contracts@0.0.61': {}
 
-  '@solidstate/hardhat-solidstate-utils@1.0.0-next.3(@nomicfoundation/hardhat-utils@3.0.0-next.13)(hardhat@3.0.0-next.15)':
+  '@solidstate/hardhat-solidstate-utils@1.0.0-next.3(@nomicfoundation/hardhat-utils@3.0.0-next.13)(hardhat@3.0.0-next.20)':
     dependencies:
       '@nomicfoundation/hardhat-utils': 3.0.0-next.13
       axios: 1.9.0
       chalk: 5.4.1
       cli-table3: 0.6.5
       env-paths: 3.0.0
-      hardhat: 3.0.0-next.15
+      hardhat: 3.0.0-next.20
       semver: 7.7.2
     transitivePeerDependencies:
       - debug
@@ -1748,7 +1748,7 @@ snapshots:
 
   '@streamparser/json@0.0.22': {}
 
-  '@trivago/prettier-plugin-sort-imports@5.2.2(@vue/compiler-sfc@3.5.16)(prettier@3.5.3)':
+  '@trivago/prettier-plugin-sort-imports@5.2.2(@vue/compiler-sfc@3.5.16)(prettier@3.6.1)':
     dependencies:
       '@babel/generator': 7.27.1
       '@babel/parser': 7.27.2
@@ -1756,7 +1756,7 @@ snapshots:
       '@babel/types': 7.27.1
       javascript-natural-sort: 0.7.1
       lodash: 4.17.21
-      prettier: 3.5.3
+      prettier: 3.6.1
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.16
     transitivePeerDependencies:
@@ -1769,7 +1769,7 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@types/node@24.0.1':
+  '@types/node@24.0.4':
     dependencies:
       undici-types: 7.8.0
 
@@ -2053,13 +2053,13 @@ snapshots:
 
   gopd@1.2.0: {}
 
-  hardhat@3.0.0-next.15:
+  hardhat@3.0.0-next.20:
     dependencies:
       '@ignored/edr': 0.10.0-alpha.5
       '@ignored/edr-optimism': 0.13.0-alpha.4
-      '@nomicfoundation/hardhat-errors': 3.0.0-next.15
-      '@nomicfoundation/hardhat-utils': 3.0.0-next.15
-      '@nomicfoundation/hardhat-zod-utils': 3.0.0-next.15(zod@3.25.7)
+      '@nomicfoundation/hardhat-errors': 3.0.0-next.20
+      '@nomicfoundation/hardhat-utils': 3.0.0-next.20
+      '@nomicfoundation/hardhat-zod-utils': 3.0.0-next.20(zod@3.25.7)
       '@nomicfoundation/solidity-analyzer': 0.1.2
       '@sentry/core': 9.22.0
       adm-zip: 0.4.16
@@ -2067,7 +2067,7 @@ snapshots:
       debug: 4.4.1
       enquirer: 2.4.1
       ethereum-cryptography: 2.2.1
-      micro-eth-signer: 0.13.3
+      micro-eth-signer: 0.14.0
       p-map: 7.0.3
       resolve.exports: 2.0.3
       semver: 7.7.2
@@ -2138,10 +2138,10 @@ snapshots:
 
   json-stream-stringify@3.1.6: {}
 
-  knip@5.61.0(@types/node@24.0.1)(typescript@5.8.3):
+  knip@5.61.2(@types/node@24.0.4)(typescript@5.8.3):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
-      '@types/node': 24.0.1
+      '@types/node': 24.0.4
       fast-glob: 3.3.3
       formatly: 0.2.4
       jiti: 2.4.2
@@ -2158,7 +2158,7 @@ snapshots:
 
   lilconfig@3.1.3: {}
 
-  lint-staged@https://codeload.github.com/ItsNickBarry/lint-staged/tar.gz/daa65d7006ab27397be251c71bfa05fa63be2b64:
+  lint-staged@https://codeload.github.com/ItsNickBarry/lint-staged/tar.gz/3d833af058e3c9151d1b1f3d121d7e2d88bf96f3:
     dependencies:
       chalk: 5.4.1
       commander: 14.0.0
@@ -2201,7 +2201,7 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  micro-eth-signer@0.13.3:
+  micro-eth-signer@0.14.0:
     dependencies:
       '@noble/curves': 1.8.2
       '@noble/hashes': 1.7.2
@@ -2274,21 +2274,21 @@ snapshots:
       source-map-js: 1.2.1
     optional: true
 
-  prettier-plugin-packagejson@2.5.15(prettier@3.5.3):
+  prettier-plugin-packagejson@2.5.16(prettier@3.6.1):
     dependencies:
-      sort-package-json: 3.2.1
+      sort-package-json: 3.2.2
       synckit: 0.11.8
     optionalDependencies:
-      prettier: 3.5.3
+      prettier: 3.6.1
 
-  prettier-plugin-solidity@2.0.0(prettier@3.5.3):
+  prettier-plugin-solidity@2.0.0(prettier@3.6.1):
     dependencies:
       '@nomicfoundation/slang': 1.1.0
       '@solidity-parser/parser': 0.20.1
-      prettier: 3.5.3
+      prettier: 3.6.1
       semver: 7.7.2
 
-  prettier@3.5.3: {}
+  prettier@3.6.1: {}
 
   proxy-from-env@1.1.0: {}
 
@@ -2329,7 +2329,7 @@ snapshots:
 
   sort-object-keys@1.1.3: {}
 
-  sort-package-json@3.2.1:
+  sort-package-json@3.2.2:
     dependencies:
       detect-indent: 7.0.1
       detect-newline: 4.0.1
