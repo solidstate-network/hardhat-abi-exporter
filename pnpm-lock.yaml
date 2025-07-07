@@ -12,12 +12,12 @@ importers:
         specifier: ^5.8.0
         version: 5.8.0
       '@solidstate/hardhat-solidstate-utils':
-        specifier: 1.0.0-next.3
-        version: 1.0.0-next.3(@nomicfoundation/hardhat-utils@3.0.0-next.13)(hardhat@3.0.0-next.20)
+        specifier: ^1.0.0-next.3
+        version: 1.0.0-next.3(@nomicfoundation/hardhat-utils@3.0.0-next.20)(hardhat@3.0.0-next.20)
     devDependencies:
       '@nomicfoundation/hardhat-utils':
-        specifier: 3.0.0-next.13
-        version: 3.0.0-next.13
+        specifier: ^3.0.0-next.13
+        version: 3.0.0-next.20
       '@solidstate/contracts':
         specifier: ^0.0.61
         version: 0.0.61
@@ -424,9 +424,6 @@ packages:
 
   '@nomicfoundation/hardhat-errors@3.0.0-next.20':
     resolution: {integrity: sha512-jJaGIzPs5YzB8oreLhYAyAo5veLJXXwiJt8oVkLRYPvfsT8+RWrIwJjcbwktfMObNNceAO8PgDP1d2YBuPwlDw==}
-
-  '@nomicfoundation/hardhat-utils@3.0.0-next.13':
-    resolution: {integrity: sha512-aTjP82db5dC+so6D0FgM7huxI3rXHNXg183e2HcEH1sz8igiMYFJeW5CEQr3mRptkPXwodwWagJGn3prQvM2fg==}
 
   '@nomicfoundation/hardhat-utils@3.0.0-next.20':
     resolution: {integrity: sha512-/uLGNOgj6SfhzMhAH7Vony5l/IHYvSdgUxXg9mTuS8qLe6L/RlqcekdtNBWZhanltIaWegD1qfDIbz+b5HJPbQ==}
@@ -1598,19 +1595,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nomicfoundation/hardhat-utils@3.0.0-next.13':
-    dependencies:
-      '@streamparser/json-node': 0.0.22
-      debug: 4.4.1
-      env-paths: 2.2.1
-      ethereum-cryptography: 2.2.1
-      fast-equals: 5.2.2
-      json-stream-stringify: 3.1.6
-      rfdc: 1.4.1
-      undici: 6.21.3
-    transitivePeerDependencies:
-      - supports-color
-
   '@nomicfoundation/hardhat-utils@3.0.0-next.20':
     dependencies:
       '@streamparser/json-node': 0.0.22
@@ -1730,9 +1714,9 @@ snapshots:
 
   '@solidstate/contracts@0.0.61': {}
 
-  '@solidstate/hardhat-solidstate-utils@1.0.0-next.3(@nomicfoundation/hardhat-utils@3.0.0-next.13)(hardhat@3.0.0-next.20)':
+  '@solidstate/hardhat-solidstate-utils@1.0.0-next.3(@nomicfoundation/hardhat-utils@3.0.0-next.20)(hardhat@3.0.0-next.20)':
     dependencies:
-      '@nomicfoundation/hardhat-utils': 3.0.0-next.13
+      '@nomicfoundation/hardhat-utils': 3.0.0-next.20
       axios: 1.9.0
       chalk: 5.4.1
       cli-table3: 0.6.5
