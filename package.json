@@ -40,19 +40,19 @@
     "@solidstate/hardhat-solidstate-utils": "^1.0.0-next.3"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-utils": "^3.0.0-next.13",
+    "@nomicfoundation/hardhat-utils": "^3.0.0-next.30",
     "@solidstate/contracts": "^0.0.61",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^24.0.4",
-    "hardhat": "^3.0.0-next.20",
+    "@types/node": "^24.2.1",
+    "hardhat": "^3.0.0-next.30",
     "husky": "^9.1.7",
-    "knip": "^5.61.2",
+    "knip": "^5.62.0",
     "lint-staged": "github:ItsNickBarry/lint-staged#knip",
-    "prettier": "^3.6.1",
-    "prettier-plugin-packagejson": "^2.5.16",
-    "prettier-plugin-solidity": "^2.0.0",
-    "typescript": "^5.8.3"
+    "prettier": "^3.6.2",
+    "prettier-plugin-packagejson": "^2.5.19",
+    "prettier-plugin-solidity": "^2.1.0",
+    "typescript": "^5.9.2"
   },
   "peerDependencies": {
     "@nomicfoundation/hardhat-utils": "^3.0.0-next.13",
