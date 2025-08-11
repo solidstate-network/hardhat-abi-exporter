@@ -9,5 +9,5 @@ export default task(TASK_ABI_EXPORT)
     name: 'noCompile',
     description: "Don't compile before running this task",
   })
-  .setAction(import.meta.resolve('../actions/abi_export.js'))
+  .setAction(() => import('../actions/abi_export.js'))
   .build();

@@ -12,8 +12,8 @@ importers:
         specifier: ^5.8.0
         version: 5.8.0
       '@solidstate/hardhat-solidstate-utils':
-        specifier: ^1.0.0-next.3
-        version: 1.0.0-next.3(@nomicfoundation/hardhat-utils@3.0.0-next.30)(hardhat@3.0.0-next.30)
+        specifier: ^1.0.0-next.4
+        version: 1.0.0-next.4(@nomicfoundation/hardhat-utils@3.0.0-next.30)(hardhat@3.0.0-next.30)
     devDependencies:
       '@nomicfoundation/hardhat-utils':
         specifier: ^3.0.0-next.30
@@ -527,8 +527,8 @@ packages:
   '@solidstate/contracts@0.0.61':
     resolution: {integrity: sha512-kQaDcEPOFbUfr7zubrwsk+DB/otV+45MXig2K312+WdUyspH2frMphGSrdlvhnpAmh/WFv/JlQW8fcWFGCNu0w==}
 
-  '@solidstate/hardhat-solidstate-utils@1.0.0-next.3':
-    resolution: {integrity: sha512-2YE6xzMiHq3ExLC9hQSDyOWmR2pS5g+jOGdMVZHZ7RrQgl3ZIzTIcD/yw9rjPORCM8k3GvPDhKcOB9TO5ype9A==}
+  '@solidstate/hardhat-solidstate-utils@1.0.0-next.4':
+    resolution: {integrity: sha512-lz3kL6gytA1XgFv8Urc79Id3nGL7HtvHFSsqV71raOehMz6RhnKZGvoHx6ioVAn2xmqpK3/3hoRiWuLhwxpv/w==}
     peerDependencies:
       '@nomicfoundation/hardhat-utils': ^3.0.0-next.11
       hardhat: ^3.0.0-next.6
@@ -609,8 +609,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@1.9.0:
-    resolution: {integrity: sha512-re4CqKTJaURpzbLHtIi6XpDv20/CnpXOtjRY5/CU32L8gU8ek9UIivcfvSWvmKEngmVbrUtPpdDwWDWL7DNHvg==}
+  axios@1.11.0:
+    resolution: {integrity: sha512-1Lx3WLFQWm3ooKDYZD1eXmoGO9fxYQjrycfHFC8P0sCfQVXyROp0p9PFWBehewBOdCwHc+f/b8I0fMto5eSfwA==}
 
   bn.js@4.12.2:
     resolution: {integrity: sha512-n4DSx829VRTRByMRGdjQ9iqsN0Bh4OolPsFnaZBLcbi8iXcB+kJ9s7EnRt4wILZNV3kPLHkRVfOc/HvhC3ovDw==}
@@ -631,6 +631,10 @@ packages:
 
   chalk@5.4.1:
     resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+
+  chalk@5.5.0:
+    resolution: {integrity: sha512-1tm8DTaJhPBG3bIkVeZt1iZM9GfSX2lzOeDVZH9R9ffRHpmHvxZ/QhgQH/aDTkswQVt+YHdXAdS/In/30OjCbg==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   cli-cursor@5.0.0:
@@ -775,8 +779,8 @@ packages:
       debug:
         optional: true
 
-  form-data@4.0.2:
-    resolution: {integrity: sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==}
+  form-data@4.0.4:
+    resolution: {integrity: sha512-KrGhL9Q4zjj0kiUt5OO4Mr/A/jlI2jDYs5eHBpYHPcBEVSiipAvn2Ko2HnPe20rmcuuvMHNdZFp+4IlGTMF0Ow==}
     engines: {node: '>= 6'}
 
   formatly@0.2.4:
@@ -1659,11 +1663,11 @@ snapshots:
 
   '@solidstate/contracts@0.0.61': {}
 
-  '@solidstate/hardhat-solidstate-utils@1.0.0-next.3(@nomicfoundation/hardhat-utils@3.0.0-next.30)(hardhat@3.0.0-next.30)':
+  '@solidstate/hardhat-solidstate-utils@1.0.0-next.4(@nomicfoundation/hardhat-utils@3.0.0-next.30)(hardhat@3.0.0-next.30)':
     dependencies:
       '@nomicfoundation/hardhat-utils': 3.0.0-next.30
-      axios: 1.9.0
-      chalk: 5.4.1
+      axios: 1.11.0
+      chalk: 5.5.0
       cli-table3: 0.6.5
       env-paths: 3.0.0
       hardhat: 3.0.0-next.30
@@ -1757,10 +1761,10 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.9.0:
+  axios@1.11.0:
     dependencies:
       follow-redirects: 1.15.9
-      form-data: 4.0.2
+      form-data: 4.0.4
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
@@ -1781,6 +1785,8 @@ snapshots:
       function-bind: 1.1.2
 
   chalk@5.4.1: {}
+
+  chalk@5.5.0: {}
 
   cli-cursor@5.0.0:
     dependencies:
@@ -1932,11 +1938,12 @@ snapshots:
 
   follow-redirects@1.15.9: {}
 
-  form-data@4.0.2:
+  form-data@4.0.4:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       es-set-tostringtag: 2.1.0
+      hasown: 2.0.2
       mime-types: 2.1.35
 
   formatly@0.2.4:
