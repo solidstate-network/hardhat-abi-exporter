@@ -19,11 +19,11 @@ pnpm add -D @solidstate/hardhat-abi-exporter
 Load plugin in Hardhat config:
 
 ```javascript
-import HardhatAbiExporter from '@solidstate/hardhat-abi-exporter';
+import hardhatAbiExporter from '@solidstate/hardhat-abi-exporter';
 
 const config: HardhatUserConfig = {
   plugins: [
-    HardhatAbiExporter,
+    hardhatAbiExporter,
   ],
   abiExporter: {
     ... // see table for configuration options
