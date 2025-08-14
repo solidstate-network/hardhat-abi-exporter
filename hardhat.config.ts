@@ -5,7 +5,7 @@ const config: HardhatUserConfig = {
   plugins: [HardhatAbiExporter],
   solidity: {
     version: '0.8.30',
-    dependenciesToCompile: ['@solidstate/contracts/interfaces/IERC20.sol'],
+    npmFilesToBuild: ['@solidstate/contracts/interfaces/IERC20.sol'],
   },
 };
 
