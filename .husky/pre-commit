@@ -1,2 +1,2 @@
 #!/bin/sh
-pnpm lint-staged --hide-unstaged --hide-untracked
+pnpm exec-staged
