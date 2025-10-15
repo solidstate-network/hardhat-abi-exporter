@@ -53,7 +53,7 @@ const exportAbiGroup = async (
       );
 
       // format ABI using ethers presets
-      const formatType = FormatTypes[config.format] ?? 'json';
+      const formatType = FormatTypes[config.format] ?? 'full';
       let contents = new Interface(abi).format(formatType);
 
       if (formatType === 'json') {
